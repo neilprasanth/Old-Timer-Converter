@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <link rel = "stylesheet" href = "OldTimerEffects.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <script>
+    function runMF()
+    {
+      var start = document.getElementById("number").value;
+      var end = document.getElementById("number2").value;
+      start = parseInt(start); // x defines how big the table will be
+      end = parseInt(end);
+      var res = 0;
+
+      var num = "Miles -------- Furlongs <br><hr><br>";
+      for(var i = start; i <= end; i++)
+      {
+        res = i * 7.99998;
+        num = num + i + "       --------       " + res + "<br>";
+      }
+      document.getElementById("result").innerHTML = num;
+    }
+    function runSP()
+    {
+      var start = document.getElementById("number").value;
+      var end = document.getElementById("number2").value;
+      start = parseInt(start); // x defines how big the table will be
+      end = parseInt(end);
+      var res = 0;
+
+      var num = "Slugs -------- Pounds <br><hr><br>";
+      for(var i = start; i <= end; i++)
+      {
+        res = i * 32.174;
+        num = num + i + "       --------       " + res + "<br>";
+      }
+      document.getElementById("result").innerHTML = num;
+    }
+    function runFD()
+    {
+      var start = document.getElementById("number").value;
+      var end = document.getElementById("number2").value;
+      start = parseInt(start); // x defines how big the table will be
+      end = parseInt(end);
+      var res = 0;
+
+      var num = "FortNights -------- Days <br><hr><br>";
+      for(var i = start; i <= end; i++)
+      {
+        res = i * 14;
+        num = num + i + "       --------       " + res + "<br>";
+      }
+      document.getElementById("result").innerHTML = num;
+    }
+
+  </script>
+  </head>
+
+  <body>
+    <center><h1>Old Timer Conversions</h1></center>
+    <p id = "beginning">Start:</p>
+    <input type = "text" id = "number">
+    <p id ="finish">End:</p>
+    <input type = "text" id = "number2">
+<br><br>
+    <input type = "button" value = "Miles to Furlongs" onclick = "runMF()" id = MTF>
+    <input type = "button" value = "SLugs to Pounds" onclick = "runSP()" id = STP>
+    <input type = "button" value = "FortNights to Days" onclick = "runFD()" id = FTD>
+
+    <br><hr><br>
+    <p id = "result"></p>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+body{
+
+  background-color:tan;
+  border-style: solid;
+  border-color: tan;
+  font-family: 'Satisfy', cursive;
+}
+
+#MTF{
+
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+}
+#STP{
+
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+}
+#FTD{
+
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+}
+
+#beginning{
+  font-family: 'Satisfy', cursive;
+  font-size: 40px;
+}
+#finish{
+  font-family: 'Satisfy', cursive;
+  font-size: 40px;
+}
+
+#number{
+  font-size: 20px;
+}
+#number2{
+  font-size: 20px;
+}
+
+#result{
+  font-size: 25px;
+}
